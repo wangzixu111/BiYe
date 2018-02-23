@@ -1,0 +1,157 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register Src="UserLogin.ascx" TagName="UserLogin" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>休渔期网站设计</title>
+<LINK 
+rel=stylesheet type=text/css href="Images/StyleSheet.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+ 
+
+<DIV class=top_bg algin="center">
+<DIV class=top_bar align=center> </DIV></DIV>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width=1000 align=center>
+  <TBODY>
+  <TR>
+    <TD><IMG border=0 alt="" src="Images/Logo.gif" width=1000 useMap=#Map 
+            style="height: 272px"></TD></TR></TBODY></TABLE>
+<DIV id=TabMenuCon71>
+<TABLE class=nav border=0 cellSpacing=0 cellPadding=0 width=1000 align=center>
+  <TBODY>
+  <TR>
+    <TD align=center background="Images/top-bg.jpg" style="font-size: 20px; color: #ffffff; height: 30px;">
+      <TABLE class=nav border=0 width=990 style="font-size: 25px; color: #ffffff; font-weight: bold; font-variant: normal;">
+        <TBODY>
+        <TR>
+          <TD   align=center><A 
+            href="Default.aspx">首　页</A></TD>
+       
+          <TD   align=center><A 
+            href="UserReg.aspx">用户注册</A></TD>
+       
+       
+       <asp:Repeater ID="DataList4" runat="server" >
+                    <ItemTemplate>
+                     
+                <TD   align=center>
+           
+                 <a   class="btn"   href='<%#Eval("id","NewsList.aspx?BID={0}")%>'>
+                                        <%#Eval("name").ToString().Length > 25 ? CutChar(Eval("name").ToString(), 32) + "..." : Eval("name")%>
+                                    </a></TD>
+             
+                 
+               
+                 
+                        
+                    </ItemTemplate>
+                </asp:Repeater>
+        
+       
+       
+          <TD  align=center><A 
+            href="AddLiuYan.aspx">留言板</A></TD>
+      
+        
+                   <TD  align=center><A 
+            href="BBS.aspx">交流论坛</A></TD>
+         </TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+
+<TABLE style="MARGIN-TOP: 5px" border=0 cellSpacing=0 cellPadding=0 width=1000 
+align=center>
+  <TBODY>
+  <TR>
+    <TD bgColor=#e7f5fa vAlign=top width=249 style="height: 308px">
+     <TABLE style="MARGIN-TOP: 0px" class=line2 border=0 cellSpacing=0 
+      cellPadding=0 width="100%">
+            <TBODY>
+                <tr  id="TD2" runat="server">
+                    <td align="center" style="background-image: url(Images/top-bg.jpg); color: #ffffff;
+                    background-repeat: repeat-x; height: 35px" valign="top">
+                        相关分类</td>
+                </tr>
+                <TR  id="TD1" runat="server">
+                    <TD vAlign=top>
+                        <asp:DataList ID="DataList1" runat="server" ForeColor="#333333">
+                            <ItemTemplate>
+                                <div class="subNav">
+                                     <a href='NewsTypeList.aspx?SID=<%#DataBinder.Eval(Container.DataItem,"id") %>&BID=<%#DataBinder.Eval(Container.DataItem,"Bid") %>'>
+                                        <%#Eval("name")%>
+                                    </a>  
+                                </div>
+                            </ItemTemplate>
+                        </asp:DataList></td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                    </td>
+                </tr>
+            </tbody>
+        </table> <TABLE style="MARGIN-TOP: 0px" class=line2 border=0 cellSpacing=0 
+      cellPadding=0 width="100%">
+        <TBODY>
+            <tr>
+                <td align="center" style="background-image: url(Images/top-bg.jpg); color: #ffffff;
+                    background-repeat: repeat-x; height: 35px" valign="top">
+                    用户登录</td>
+            </tr>
+        <TR>
+          <TD vAlign=top>
+              <uc1:UserLogin ID="UserLogin1" runat="server" />
+          </TD></TR>
+            <tr>
+                <td valign="top" style="height: 24px">
+              </td>
+            </tr>
+        </TBODY></TABLE>
+    </TD>
+    <TD style="PADDING-LEFT: 5px; height: 308px;" bgColor=#ffffff vAlign=top>
+      <TABLE style="MARGIN-TOP: 5px; MARGIN-BOTTOM: 5px" class=border1 border=0 
+      cellSpacing=0 cellPadding=0 width="99%">
+        <TBODY>
+        <TR>
+          <TD vAlign=top>
+            <TABLE border=0 cellSpacing=0 cellPadding=0 width="98%" 
+align=center>
+              <TBODY>
+              <TR>
+                <TD height=3 
+            background=Images/con_02.gif></TD></TR></TBODY></TABLE>
+            <TABLE border=0 cellSpacing=0 cellPadding=0 width="98%" 
+            bgColor=#ffffff align=center>
+              <TBODY>
+              <TR>
+                <TD align=left>
+                  <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY></TBODY></TABLE>
+                  <P>
+                      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                      </asp:ContentPlaceHolder>
+                  </P>
+                  
+                  
+                  </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width=1000 align=center>
+  <TBODY>
+  <TR>
+    <TD bgColor=#2b383e height=15></TD></TR></TBODY></TABLE>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width=1000 bgColor=#ffffff 
+align=center>
+  <TBODY>
+  <TR>
+    <TD align=center>
+        版权所有：休渔期网站设计
+        <br />
+        <A 
+            href="Admin/Login.aspx" 
+            target=_blank>管理登陆</A>
+     </TD></TR></TBODY></TABLE>
+</DIV>
+<P></P>
+    </form>
+</body>
+</html>
