@@ -1,0 +1,12 @@
+.pcTipsBar {
+	BORDER-BOTTOM: #e5deaf 1px solid; POSITION: relative; TEXT-ALIGN: center; LINE-HEIGHT: 1em; DISPLAY: none; WHITE-SPACE: nowrap; BACKGROUND: #fffad5 0px 0px; HEIGHT: 20px; COLOR: #f00; FONT-SIZE: 12px; PADDING-TOP: 4px
+}
+.pcTipsBar .tips {
+	LINE-HEIGHT: 17px; DISPLAY: inline-block
+}
+.pcTipsBar .btn {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 3px; LINE-HEIGHT: 18px; PADDING-LEFT: 5px; WIDTH: 58px; PADDING-RIGHT: 5px; BACKGROUND: url(/course/images/dow.jpg) no-repeat; HEIGHT: 18px; COLOR: #ffffff; TEXT-DECORATION: none; PADDING-TOP: 3px
+}
+.pcTipsBar .closeSelf {
+	POSITION: absolute; WIDTH: 58px; BACKGROUND: url(/course/images/close3.gif) no-repeat 0px 0px; HEIGHT: 14px; RIGHT: 15px; TOP: 5px
+}

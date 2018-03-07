@@ -1,0 +1,146 @@
+.button {
+	border-width: 1px; border-style: solid; border-color: rgb(204, 255, 255) rgb(0, 153, 204) rgb(0, 153, 204) rgb(204, 255, 255); height: 25px; text-align: center; color: rgb(0, 0, 0); line-height: 20px; font-size: 9pt; background-color: rgb(204, 241, 244);
+}
+:disabled.button {
+	border: 1px solid rgb(157, 157, 157); height: 25px; text-align: center; color: rgb(157, 157, 157); line-height: 20px; font-size: 9pt; background-color: rgb(240, 240, 240);
+}
+body
+{
+	font-family: ËÎÌו;
+	font-size: 9pt;
+}
+a {
+	font-family: "????"; font-size: 9pt; text-decoration: none;
+}
+a:hover {
+	color: red; font-family: "????"; font-size: 9pt; text-decoration: underline;
+}
+a.white {
+	color: white; font-family: "????"; font-size: 9pt; text-decoration: none;
+}
+a.white_c {
+	color: white; font-family: "????"; font-size: 9pt; text-decoration: none;
+}
+a.white:link {
+	color: white; font-family: "????"; font-size: 9pt; text-decoration: none;
+}
+a.white:visited {
+	color: white; font-family: "????"; font-size: 9pt; text-decoration: none;
+}
+a.white:hover {
+	color: red; text-decoration: underline;
+}
+a.white_c:hover {
+	color: white; font-family: "????"; font-size: 9pt; text-decoration: none;
+}
+a.black {
+	color: black; font-family: "????"; font-size: 9pt; text-decoration: none;
+}
+a.black:link {
+	color: black; font-family: "????"; font-size: 9pt; text-decoration: none;
+}
+a.black:visited {
+	color: black; font-family: "????"; font-size: 9pt; text-decoration: none;
+}
+a.black:hover {
+	color: red; text-decoration: underline;
+}
+a.blue {
+	color: blue; font-family: "????"; font-size: 9pt; text-decoration: none;
+}
+a.blue:link {
+	color: blue; font-family: "????"; font-size: 9pt; text-decoration: none;
+}
+a.blue:visited {
+	color: blue; font-family: "????"; font-size: 9pt; text-decoration: none;
+}
+a.blue:hover {
+	color: red; text-decoration: underline;
+}
+.litfont {
+	font-family: "Times New Roman"; font-size: 7pt;
+}
+.comfont {
+	font-family: "????"; font-size: 12px;
+}
+.bigfont {
+	font-family: "????"; font-size: 10.5pt;
+}
+.bigbfont {
+	font-family: "????"; font-size: 10.5pt; font-weight: bold;
+}
+.litsline {
+	line-height: 13pt; font-family: "????"; font-size: 7pt;
+}
+.litbline {
+	line-height: 15pt; font-family: "????"; font-size: 7pt;
+}
+.comsline {
+	line-height: 13pt; font-family: "????"; font-size: 9pt;
+}
+.combline {
+	line-height: 15pt; font-family: "????"; font-size: 12px;
+}
+.bigsline {
+	line-height: 13pt; font-family: "????"; font-size: 10.5pt;
+}
+.bigbline {
+	line-height: 15pt; font-family: "????"; font-size: 10.5pt;
+}
+td.t_numeric {
+	text-align: right; padding-right: 6px;
+}
+table.normal {
+	margin: 0px; width: 100%; border-collapse: collapse;
+}
+table.normal td.title {
+	padding: 2px 5px; border: 1px solid lightgray; height: 30px; text-align: center; color: white; font-size: 9pt; font-weight: bold; background-color: rgb(80, 124, 209);
+}
+table.normal td {
+	padding: 2px 5px; border: 1px solid lightgray; height: 30px; text-align: left; font-size: 9pt;
+}
+table.black {
+	margin: 0px; padding: 0px; border-collapse: collapse; border-spacing: 0px;
+}
+table.black td.title {
+	padding: 2px 5px; border: 1px solid black; height: 30px; text-align: center; color: white; font-size: 9pt; font-weight: bold; background-color: rgb(80, 124, 209);
+}
+table.black td {
+	padding: 2px 5px; border: 1px solid black; height: 30px; text-align: left; font-size: 9pt;
+}
+table.black td.top {
+	border-width: 0px 1px 1px; border-style: solid; border-color: black; padding: 2px 5px; height: 30px; text-align: left; font-size: 9pt;
+}
+table.NoBorder {
+	margin: 0px; padding: 0px; border-collapse: collapse; border-spacing: 0px;
+}
+table.NoBorder td.title {
+	padding: 0px; border: 0px solid black; height: 30px; text-align: center; color: white; font-size: 9pt; font-weight: bold; background-color: rgb(80, 124, 209);
+}
+table.NoBorder td {
+	padding: 0px; border: 0px solid black; height: 30px; text-align: left; font-size: 9pt;
+}
+table.lightgray {
+	margin: 0px; padding: 0px; border-collapse: collapse; border-spacing: 0px;
+}
+table.lightgray td.title {
+	padding: 0px; border: 1px solid lightgray; height: 30px; text-align: center; color: white; font-size: 9pt; font-weight: bold; background-color: rgb(80, 124, 209);
+}
+table.lightgray td {
+	padding: 2px 5px; border: 1px solid lightgray; height: 25px; font-size: 9pt;
+}
+table.DataList {
+	margin: 0px; padding: 0px; border-collapse: collapse; table-layout: fixed; text-overflow: ellipsis; border-spacing: 0px;
+}
+table.DataList td {
+	border: 1px solid lightgray; overflow: hidden; font-size: 9pt; white-space: pre; text-overflow: ellipsis;
+}
+.floatMessage {
+	padding: 20px; width: 280px; height: 180px; right: 0px; bottom: 0px; font-size: 14px; position: absolute; background-color: rgb(225, 225, 225);
+}
+.floatMessage p {
+	margin: 0px; aaline-height: 40px;
+}
+.floatMessage .date {
+	text-align: right;
+}
